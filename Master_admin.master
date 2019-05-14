@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 950px;
+            background-color: #FFFFFF;
+        }
+        .auto-style2 {
+            width: 160px;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="teacher_menu_files/css3menu1/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+</head>
+<body style="background-color:cornflowerblue;margin-top:0px; margin-left:0px;margin-right:0px " >
+    <form id="form1" runat="server">
+    <div id="header" style="width:100%;height:120px;background-color:#ffffff"; class="auto-style3" >
+        <%--<h1 style="text-align:center; margin-top:35px">Välkommen</h1>--%>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/imeges/banner.png" />
+    </div>
+
+    <table align="center" class="auto-style1" dir="ltr">
+        <tr>
+            <td class="auto-style2">&nbsp;
+                <ul id="css3menu1" class="topmenu">
+	<li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
+	<li class="topfirst"><a href="#" style="width:158px;">Lägg till användare</a></li>
+	<li class="topmenu"><a href="#" style="width:158px;">Redigera användare </a></li>
+	<li class="topmenu"><a href="#" style="width:158px;">lägga till ämne</a></li>
+	<li class="topmenu"><a href="#" style="width:158px;">Söka</a></li>
+	<li class="toplast"><a href="#" style="width:158px;">logga ut</a></li>
+</ul>
+            </td>
+            <td style="vertical-align:top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p> &nbsp;</p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+
+    </form>
+
+</body>
+</html>
