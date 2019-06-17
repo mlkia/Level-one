@@ -12,7 +12,7 @@
             client.EnableSsl = true;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("mlk.2plus@gmail.com", "07708485250");
+            client.Credentials = new NetworkCredential("mlk.2plus@gmail.com", "**********");
             MailMessage message = new MailMessage(to:"mlk.820g@gmail.com",from:"mlk.2plus@gmail.com",subject:"ne ny",body:"ladda en ny fil");
             message.To.Add("mlk.820g@gmail.com");
             message.From = new MailAddress("mlk.2plus@gmail.com");
